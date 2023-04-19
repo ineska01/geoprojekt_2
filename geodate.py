@@ -21,6 +21,9 @@ class GeoData:
     def get_coordinates(self):
         return self.data['geometry']['coordinates']
     
+    def get_geometry_type(self):
+        return self.data['geometry']['type']
+    
     def get_bbox(self):
         if 'bbox' in self.data:
             return self.data['bbox']
@@ -35,3 +38,4 @@ print(geo.get_type())
 print(geo.get_coordinates()) 
 print(geo.get_bbox()) 
 print(geo.to_string()) 
+print(geo.get_geometry_type())

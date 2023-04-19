@@ -9,6 +9,7 @@ data = {
     }
 }
 
+
 class GeoData:
     
     def __init__(self, data):
